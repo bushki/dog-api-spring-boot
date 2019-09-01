@@ -13,7 +13,22 @@ public class DogServiceImpl  implements  DogService{
     DogService dogService;
 
     @Override
-    public List<Dog> getAllDogs() {
-        return dogService.getAllDogs();
+    public List<Dog> retrieveDogs() {
+        return dogService.retrieveDogs();
+    }
+
+    @Override
+    public List<String> retrieveDogBreed() {
+       return dogService.retrieveDogBreed();
+    }
+
+    @Override
+    public String retrieveDogBreedById(Long id) {
+        return dogService.retrieveDogBreedById(id);
+    }
+
+    @Override
+    public List<String> retrieveDogNames() {
+        return dogService.retrieveDogNames();
     }
 }
